@@ -1,0 +1,19 @@
+{
+  "name": "ico-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "DOCKER_BUILDKIT=0 docker build -t ico-issue .",
+    "start": "docker run --name ico-issue --rm ico-issue"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "got": "~11.8.3",
+    "picocolors": "~1.0.0",
+    "splashy": "~5.1.0"
+  }
+}
