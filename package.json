@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "DOCKER_BUILDKIT=0 docker build -t ico-issue .",
-    "start": "docker run --name ico-issue --rm ico-issue"
+    "build:base": "DOCKER_BUILDKIT=0 docker build -t ico-issue-base -f Dockerfile.base .",
+    "start": "docker run --name ico-issue --rm ico-issue > output.txt"
   },
   "keywords": [],
   "author": "",
